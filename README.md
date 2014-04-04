@@ -1,8 +1,17 @@
+
+Achievement Plugin
+================================
+
 Name: Achievement Manager.
+
 Version: 1.0
+
 Type: GameObject Plugin
+
 Author: Kiwi.js Team
+
 Website: www.kiwijs.org
+
 KiwiJS last version tested: 0.5.3
 
 ----------------------------------------------------------------------------------------
