@@ -27,28 +27,17 @@ module.exports = function(grunt) {
                 'src/Achievements-<%= pkg.version %>.min.js': ['<%= pkg.main %>']
             }
         }
-    },
- 
-    copy: {
-
-        whole: {
-          src: ['src/**', 'examples/**', 'docs/**', 'assets/**', 'libs/**', 'README.md'],
-          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>/'
-        }
-
     }
 
  });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-yuidoc');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-
   
   
   
   grunt.registerTask("default", ["uglify:build"]);
-  grunt.registerTask("full", ["uglify:build","yuidoc:compile","copy:whole"]);
+  grunt.registerTask("full", ["uglify:build","yuidoc:compile"]);
   
   
 

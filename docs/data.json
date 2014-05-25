@@ -38,7 +38,7 @@
                 "Kiwi.Plugins.Achievements": 1
             },
             "file": "src\\Achievements-1.0.0.js",
-            "line": 15
+            "line": 28
         },
         "Plugins": {
             "name": "Plugins",
@@ -56,7 +56,7 @@
             "module": "Kiwi",
             "namespace": "",
             "file": "src\\Achievements-1.0.0.js",
-            "line": 15,
+            "line": 28,
             "description": "The basic Achievement Manager Object. Contains name and version number."
         }
     },
@@ -88,7 +88,7 @@
             "submodule": "Plugins",
             "namespace": "Kiwi.Plugins.Achievements",
             "file": "src\\Achievements-1.0.0.js",
-            "line": 15,
+            "line": 28,
             "description": "A Kiwi Plugin GameObject that can manage a set of achievements.\n\nYou can currently set two types of achievements. \nDefault achievements are achievements that can simply be unlocked.\nNumber achievements keep track of a variable, and once it has reached it's specified objective, the achievement is unlocked.",
             "extends": "Entity",
             "is_constructor": 1
@@ -97,7 +97,35 @@
     "classitems": [
         {
             "file": "src\\Achievements-1.0.0.js",
-            "line": 61,
+            "line": 10,
+            "description": "The name of this plugin.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.AchievementManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\Achievements-1.0.0.js",
+            "line": 18,
+            "description": "The version of this plugin in semver (semantic versioning) format",
+            "itemtype": "property",
+            "name": "version",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.AchievementManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\Achievements-1.0.0.js",
+            "line": 74,
             "description": "A method that dynamically creates a new achievement. You can also create one manually in the achievements object above.",
             "itemtype": "method",
             "name": "createAchievement",
@@ -137,7 +165,7 @@
         },
         {
             "file": "src\\Achievements-1.0.0.js",
-            "line": 86,
+            "line": 99,
             "description": "A method that unlocks a default achievement.",
             "itemtype": "method",
             "name": "getAchievement",
@@ -157,7 +185,7 @@
         },
         {
             "file": "src\\Achievements-1.0.0.js",
-            "line": 100,
+            "line": 113,
             "description": "A method that updates a numbered achievement, and unlocks the achievement automatically if the objective is met.",
             "itemtype": "method",
             "name": "updateQuest",
@@ -182,7 +210,7 @@
         },
         {
             "file": "src\\Achievements-1.0.0.js",
-            "line": 121,
+            "line": 134,
             "description": "A method that returns a boolean of whether you have collected a specifc achievement.",
             "itemtype": "method",
             "name": "returnUnlocked",
@@ -206,7 +234,7 @@
         },
         {
             "file": "src\\Achievements-1.0.0.js",
-            "line": 136,
+            "line": 149,
             "description": "A method that returns the description string of any given achievement.",
             "itemtype": "method",
             "name": "returnDescription",
@@ -230,7 +258,7 @@
         },
         {
             "file": "src\\Achievements-1.0.0.js",
-            "line": 151,
+            "line": 164,
             "description": "A method that returns the current value of any given achievement.",
             "itemtype": "method",
             "name": "returnCurrent",
@@ -254,7 +282,7 @@
         },
         {
             "file": "src\\Achievements-1.0.0.js",
-            "line": 170,
+            "line": 183,
             "description": "A method that returns required value for current achievement.",
             "itemtype": "method",
             "name": "returnObjective",

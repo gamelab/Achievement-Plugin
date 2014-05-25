@@ -2,17 +2,19 @@
     "name": "AchievementManager",
     "version": "1.0.0",
     "description": "Handles and updates a list of achievements",
-    "author": "GameLab",
-    "logo": "xx",
+    "author": {
+        "name" : "GameLab",
+        "email" : ""
+        },
 
     "homepage": "http://kiwijs.org/",
-    "bugs": "xx",
-    "license": "xx",
-    "licenseUrl": "xx",
+    "bugs": "",
+    "license": "MIT",
+    "licenseUrl": "",
 
     "repository": {
         "type": "git",
-        "url": "xx"
+        "url": ""
     },
 
     "main": "src/Achievements-1.0.0.js",
