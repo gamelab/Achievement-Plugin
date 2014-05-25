@@ -43,4 +43,4 @@ AchievementExample.pressButton = function () {
 
 if (typeof gameOptions == "undefined") gameOptions = {};
 
-var game = new Kiwi.Game('game', 'QuestExample', AchievementExample, gameOptions);
+var game = new Kiwi.Game(null, 'QuestExample', AchievementExample, gameOptions);
